@@ -1,0 +1,11 @@
+C:\Users\StaticWind\source\repos\CarDispatch\CarDispatch\bin\Debug\netcoreapp2.0\CarDispatch.deps.json
+C:\Users\StaticWind\source\repos\CarDispatch\CarDispatch\bin\Debug\netcoreapp2.0\CarDispatch.runtimeconfig.json
+C:\Users\StaticWind\source\repos\CarDispatch\CarDispatch\bin\Debug\netcoreapp2.0\CarDispatch.runtimeconfig.dev.json
+C:\Users\StaticWind\source\repos\CarDispatch\CarDispatch\bin\Debug\netcoreapp2.0\CarDispatch.dll
+C:\Users\StaticWind\source\repos\CarDispatch\CarDispatch\bin\Debug\netcoreapp2.0\CarDispatch.pdb
+C:\Users\StaticWind\source\repos\CarDispatch\CarDispatch\obj\Debug\netcoreapp2.0\CarDispatch.csprojAssemblyReference.cache
+C:\Users\StaticWind\source\repos\CarDispatch\CarDispatch\obj\Debug\netcoreapp2.0\CarDispatch.csproj.CoreCompileInputs.cache
+C:\Users\StaticWind\source\repos\CarDispatch\CarDispatch\obj\Debug\netcoreapp2.0\CarDispatch.AssemblyInfoInputs.cache
+C:\Users\StaticWind\source\repos\CarDispatch\CarDispatch\obj\Debug\netcoreapp2.0\CarDispatch.AssemblyInfo.cs
+C:\Users\StaticWind\source\repos\CarDispatch\CarDispatch\obj\Debug\netcoreapp2.0\CarDispatch.dll
+C:\Users\StaticWind\source\repos\CarDispatch\CarDispatch\obj\Debug\netcoreapp2.0\CarDispatch.pdb
