@@ -6,7 +6,7 @@ namespace CarDispatch.Tools
 {
     public class Tool
     {
-        //计算图中两点间的最短路径
+        //使用迪杰斯特拉算法计算图中两点间的最短路径
         public static float Djstl(TrailerGraph g, int s, int e)
         {
             float shortLength = 0;

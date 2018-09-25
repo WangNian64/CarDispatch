@@ -95,11 +95,13 @@ namespace CarDispatch.Objects
             Console.WriteLine(vertexes[vertexPosition] + " ");
         }
         //生成一个轨道图的对象
-        public TrailerGraph createTrailer(int numVertex)
+        public TrailerGraph createTrailer()
         {
-            TrailerGraph trailerGraph = new TrailerGraph(numVertex);
-            float curveLength = MathF.PI * curveRadius;
-            //数据
+            TrailerGraph trailerGraph = new TrailerGraph(7);
+            trailerGraph.lineLength = 10.0f;
+            trailerGraph.curveRadius = 5.0f;
+            float curveLength = MathF.PI * curveRadius;//半圆的曲线长度
+            //轨道边的数据
             EdgeData[] edgeDatas = {
                 new EdgeData(1, 2, LineType.Curve, curveLength),
                 new EdgeData(2, 3, LineType.Straight, lineLength),
@@ -109,7 +111,7 @@ namespace CarDispatch.Objects
                 new EdgeData(5, 6, LineType.Straight, lineLength),
                 new EdgeData(6, 1, LineType.Straight, lineLength)
             };
-            //只需要x、y
+            //轨道点的数据
             Vertex[] vertexes = {
                 new Vertex(null, new Position(-5, 10, 0)),
                 new Vertex(null, new Position(5, 10, 0)),
@@ -118,12 +120,12 @@ namespace CarDispatch.Objects
                 new Vertex(null, new Position(-5, -10, 0)),
                 new Vertex(null, new Position(-5, 0, 0))
             };
-            //给点赋值
+            //给点赋值（坐标）
             for (int i = 0; i < numVertex; i++)
             {
                 trailerGraph.vertexes[i] = new Vertex(vertexes[i].data, vertexes[i].vertexPos);
             }
-            //给边赋值
+            //给边赋值（边的两点序号、边的种类（直还是曲）、边长
             for (int i = 0; i < numVertex; i++)
             {
                 trailerGraph.AddEdge(numVertex, numVertex, LineType.Straight, 0);
@@ -232,14 +234,16 @@ namespace CarDispatch.Objects
         //2车都在取货/卸货时互不影响
         ///////////////
         //终极问题：多小车同时工作的最大时间计算
-        public float calcuMultiTaskTime(List<Dictionary<Car, Task>> car_task_list)
+        //这里只计算一个匹配的总时间
+        public float calcuMultiTaskTime(Dictionary<Car, Task> match)
         {
-            //先假设至多2个任务、2个车
-            //先计算1-1,2-2
-
+            //每个任务的时间有四个阶段
+            //多个车之间的取货和放货时间基本一致
+            //后面车要受到前车的制约
+            //多小车的时间还和取货点和放货点 位置有关
+            //
             return 0.0f;
         }
-
     }
     ////车2的时间段
     //public float calcuMultiTaskTime(List<Dictionary<Car, Task>> carTaskdict_list)
